@@ -1,0 +1,118 @@
+.SectionList {
+  padding: 20px;
+  font-family: 'OpenSans', sans-serif;
+  width: 570px;
+  .pagination {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .pagination button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+
+  .pagination button:hover:not(:disabled) {
+    background-color: #f0f0f0;
+  }
+
+  .activePage {
+    background-color: #333;
+    color: black;
+    border-color: #333;
+  }
+
+  .arrow {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  .flex:first-child {
+    margin-bottom: 20px;
+    a {
+      border: 0px;
+      background-color: transparent;
+      margin-left: 50px;
+      font-size: 16px;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .active {
+      padding-bottom: 10px;
+      border-bottom: 2px solid blue;
+    }
+  }
+  .work {
+    background-color: #4263eb;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 12px;
+  }
+  ul {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    list-style: none;
+    border-radius: 10px;
+    li {
+      padding: 8px 0;
+    }
+    li:first-child {
+      line-height: 30px;
+      font-size: 21px;
+      color: #364fc7;
+      padding-bottom: 15px;
+    }
+    li:last-child {
+      display: flex;
+    }
+    li {
+      button {
+        font-size: 14px;
+        padding: 15px 25px;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 0px;
+        background-color: black;
+        color: white;
+        transition:
+          background-color 0.3s ease,
+          transform 0.3s ease;
+        &:hover {
+          background-color: #333;
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+      }
+      button:last-child {
+        background-color: #e7e7e7;
+        color: black;
+        transition:
+          background-color 0.3s ease,
+          transform 0.3s ease;
+        &:hover {
+          background-color: #a9a6a6;
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

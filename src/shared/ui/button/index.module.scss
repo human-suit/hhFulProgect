@@ -1,0 +1,79 @@
+@use '../../styles/index.scss';
+
+.btn {
+  background-color: #54b46a;
+  border: 0px;
+  border-radius: 10px;
+  padding: 12px 50px;
+  color: white;
+  transition: 0.4s;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.whiteCrug {
+  p:first-child {
+    color: black;
+    border-radius: 15px;
+    padding: 6px 10px;
+    font-weight: 500;
+    background-color: white;
+  }
+}
+.btn:hover {
+  transition: 0.4s;
+
+  // padding: 18px 55px;
+  cursor: pointer;
+}
+
+.butPlus {
+  background-color: #dee2e6;
+  padding: 0px;
+  gap: 0px;
+  width: 30px;
+  height: 30px;
+  &:active {
+    span {
+      transition: 0.2s;
+      filter: invert(14%) sepia(8%) saturate(313%) hue-rotate(173deg)
+        brightness(92%) contrast(91%);
+    }
+  }
+}
+.butMin {
+  background-color: #dee2e6;
+  padding: 0px;
+  gap: 0px;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 10px;
+  &:active {
+    span {
+      transition: 0.2s;
+      filter: invert(14%) sepia(8%) saturate(313%) hue-rotate(173deg)
+        brightness(92%) contrast(91%);
+    }
+  }
+}
+.butGreen:hover {
+  transition: 0.4s;
+  background-color: #54b46a;
+  color: #ffffff;
+}
+.butGreen {
+  background-color: #e7faeb;
+  color: #3b944e;
+  padding: 0px;
+  gap: 0px;
+  font-size: 18px;
+  width: 160px;
+  gap: 10px;
+  height: 50px;
+  &:active {
+    transform: scale(0.95);
+    background-color: #3b944e;
+  }
+}

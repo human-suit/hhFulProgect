@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  .flex {
+    position: relative; // обязательно, если svg абсолютный
+    background-color: white;
+    padding: 10px 10px 80px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 16px rgba(33, 37, 41, 0.2);
+    svg {
+      margin-left: 20px;
+      position: absolute;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+      transform: translate(-50%, 20%) scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.VacancyPage {
+  background-color: #f6f6f7;
+  height: 100%;
+  .VacancyPage_body {
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px;
+    font-family: 'OpenSans', sans-serif;
+    width: 800px;
+
+    .flex {
+      display: flex;
+      margin: 50px 0px 50px 30px;
+      h1 {
+        width: 400px;
+        font-size: 32px;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+      a {
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: #4263eb;
+        color: white;
+        padding: 12px 28px;
+        height: 42px;
+        margin: 20px 0px 0px 40px;
+        transition: 0.5s;
+        &:hover {
+          transition: 0.5s;
+          background-color: blue;
+        }
+      }
+    }
+  }
+}

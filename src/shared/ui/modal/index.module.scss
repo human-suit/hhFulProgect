@@ -1,0 +1,81 @@
+.backdrop {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: start;
+  justify-content: right;
+  z-index: 999;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  margin: 100px 20px;
+  display: grid;
+  background: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  min-width: 460px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: -3px 2px 18px 1px rgba(34, 60, 80, 0.2);
+  transform: translateY(-20px);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+
+  img {
+    width: 120px;
+  }
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .scrollContainer {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  .scrollContainer::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  .scrollContainer::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.AboutPage {
+  background-color: #f6f6f7;
+  height: 100%;
+
+  .AboutPage_body {
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px;
+    font-family: 'OpenSans', sans-serif;
+    width: 770px;
+
+    text-align: left;
+    height: 100vh;
+    .white {
+      background-color: white;
+      border-radius: 10px;
+      padding: 50px;
+      h1 {
+        font-size: 32px;
+        padding-bottom: 20px;
+      }
+      p {
+        letter-spacing: 1px;
+        line-height: 28px;
+      }
+    }
+  }
+}

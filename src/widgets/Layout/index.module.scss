@@ -1,0 +1,83 @@
+.sectionFilter {
+  padding: 20px;
+  font-family: 'OpenSans', sans-serif;
+  div {
+    padding: 30px 20px;
+    width: 317px;
+    border-radius: 10px;
+    background-color: white;
+    height: fit-content;
+  }
+  div:first-child {
+    position: relative;
+    height: fit-content;
+    .grid {
+      margin-top: 0px;
+      padding-left: 0px;
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+      span {
+        background-color: #f6f6f7;
+        color: black;
+        display: flex;
+        display: flex;
+        padding: 8px;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      button {
+        position: relative;
+        margin-top: 0px;
+        margin-left: 10px;
+        background-color: transparent;
+        padding: 0px;
+      }
+    }
+    p {
+      color: #212529;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+    }
+    input {
+      margin-top: 20px;
+      padding: 10px 50px 10px 10px;
+      border: 1px solid gray;
+      border-radius: 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      position: absolute;
+      margin-top: 20px;
+      margin-left: 10px;
+      background-color: #228be6;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 6px 6px 6px;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  div:last-child {
+    margin-top: 20px;
+  }
+  .filterCity {
+    position: relative;
+    img {
+      position: absolute;
+      margin: 12px 0px 0px 15px;
+    }
+    select {
+      color: #b7b7b7;
+      padding: 10px 100px 10px 30px;
+      border: 1px solid #b7b7b7;
+      border-radius: 5px;
+      outline: none;
+    }
+  }
+}

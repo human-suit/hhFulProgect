@@ -1,0 +1,27 @@
+.main {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0px 20px 20px 0px;
+  width: 290px;
+  height: 390px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: column;
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    p {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  img {
+    padding-top: 10px;
+    width: 276px;
+    height: 276px;
+  }
+}

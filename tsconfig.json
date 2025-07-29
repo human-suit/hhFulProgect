@@ -1,0 +1,15 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@shared*": ["src/shared/*"],
+      "@widgets*": ["src/widgets/*"],
+      "@features*": ["src/features/*"],
+      "@entities*": ["src/entities/model/*"]
+    },
+    "jsx": "react-jsx"
+  }
+}
